@@ -7,3 +7,7 @@ Sitio estático: index.html, style.css, app.js. Publicar desde main / raíz en G
 Contiene presentación artística, plan propuesto, oportunidades documentadas y fuentes de prensa. Las convocatorias corresponden a la revisión del 8 de octubre de 2026.
 
 La fotografía de El Pilón es una referencia de la versión privada; su permiso de difusión pública no ha sido verificado. Reemplazar por una fotografía autorizada antes de difusión pública.
+
+## Despliegue
+
+GitHub Pages se publica desde la rama `main`, carpeta `/(root)`, con el dominio personalizado `juliogaillard.art`. Los cambios en esta rama activan una nueva publicación cuando Pages está habilitado.
