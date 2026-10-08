@@ -3,3 +3,31 @@
 @media(max-width:850px){.wrap{width:min(100% - 44px,660px)}.header-inner{width:calc(100% - 34px);flex-wrap:wrap;min-height:94px;padding:10px 0 7px;gap:5px}.identity-symbol{font-size:30px}.identity-text{font-size:11px}.top-nav{order:2;width:100%;margin-left:0;justify-content:space-between;gap:10px;overflow-x:auto;scrollbar-width:none}.top-nav::-webkit-scrollbar{display:none}.top-nav a{font-size:12px;padding:5px 0}.hero{grid-template-columns:1fr;padding:65px 0 80px;gap:45px}.hero h1{font-size:clamp(57px,10vw,92px);letter-spacing:-3px;margin:25px 0 21px}.hero-art{width:min(100%,490px);margin-inline:auto}.hero-photo img{height:auto;max-height:540px;min-height:0;aspect-ratio:4/5}.hero-stamp{left:-12px}.marquee>.wrap{justify-content:center;gap:12px;white-space:normal;text-align:center;font-size:10px;line-height:2}.section{padding-top:72px;padding-bottom:75px}.section-intro,.road-layout,.contact-layout{grid-template-columns:1fr;gap:32px}.section-intro h2,.road-copy h2,.contact-section h2{font-size:clamp(51px,9vw,77px);letter-spacing:-2px}.feature-grid{grid-template-columns:1fr;gap:18px}.feature{padding-top:14px}.feature h3{margin:12px 0 7px}.quote-panel{margin-top:40px;padding:26px}.quote-panel blockquote{font-size:22px}.road-image{max-width:460px}.road-image img{aspect-ratio:1/1}.video-grid{grid-template-columns:1fr}.follow-band{align-items:start;flex-direction:column}.contact-section{padding:77px 0}.site-footer .wrap{flex-wrap:wrap;padding:20px 0;min-height:0}}
 @media(max-width:480px){.wrap{width:calc(100% - 36px)}.hero h1{font-size:57px}.hero-art{padding:15px}.hero-stamp{width:96px;height:96px;font-size:8px;bottom:50px}.photo-decoration{left:24px}.hero-actions{gap:20px}.hero .btn{width:100%}.marquee span{font-size:11px}.section-intro h2,.road-copy h2,.contact-section h2{font-size:49px}.press-item{grid-template-columns:60px 1fr 18px;gap:12px}.press-year{font-size:18px}.press-copy strong{font-size:22px}.press-arrow{font-size:20px}.follow-actions{width:100%}.follow-actions .btn{flex:1}.contact-links>a{font-size:21px}.site-footer .wrap{display:block}.site-footer .wrap>span,.site-footer .wrap>a{display:block;margin:9px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Correcciones de estructura: navegación completa, leyenda del recorrido y móvil. */
+.marquee>.wrap{flex-wrap:wrap;justify-content:center;column-gap:25px;row-gap:5px}
+.marquee span{font:700 12px/1.7 Arial,Helvetica,sans-serif;letter-spacing:2px;color:var(--gold)}
+.marquee i{color:var(--white);font-style:normal;font-size:15px}
+.road-notes{background:#334247;border:1px solid #526367;border-radius:210px 210px 4px 4px;min-height:505px;padding:100px 39px 38px;display:flex;flex-direction:column;justify-content:space-between}
+.road-notes-top{font-size:11px;letter-spacing:2.3px;font-weight:700;color:var(--gold)}
+.road-notes-quote{font:italic clamp(32px,3.7vw,49px)/1.22 Georgia,serif;color:#fff!important;margin:25px 0 38px}
+.route-line{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;border-top:1px solid #81908a;padding-top:23px}
+.route-line span{font-size:12px;letter-spacing:1.5px;color:#d4ded6}
+.road-notes a{display:inline-block;margin-top:34px;color:var(--gold);font-size:13px;font-weight:700}
+#videos{scroll-margin-top:100px}
+@media(max-width:850px){
+ html{scroll-padding-top:155px}
+ .top-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px 10px;overflow:visible;text-align:center}
+ .top-nav a{display:block;padding:6px 2px;font-size:12px;white-space:normal;border-bottom:1px solid var(--line)}
+ .header-inner{padding-bottom:10px}
+ .road-notes{min-height:360px;padding:75px 33px 30px;max-width:460px}
+ .road-notes-quote{font-size:clamp(31px,7vw,43px)}
+ .marquee>.wrap{gap:6px 13px}
+}
+@media(max-width:480px){
+ .top-nav{gap:0 5px}
+ .top-nav a{font-size:11px}
+ .road-notes{min-height:350px;padding:67px 26px 27px}
+ .marquee span{font-size:10px;letter-spacing:1px}
+ .marquee i{font-size:10px}
+}
